@@ -96,41 +96,41 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{郑煜}} 
 
-\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
+\centerline{\normalsize{\faPhone\ 173-5778-2028 \quad \faEnvelopeO\ \href{mailto:790245083@qq.com}{790245083@qq.com}}} 
 
-\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
+
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
+\textbf{浙江大学} \hfill 2024.9 -- 2027.6\\[0.5em] % 标题和正文间加一点距离
+计算机科学与技术 硕士\quad  
 \begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+    \item 相关课程：《cuda编程》、《机器学习》、《数据挖掘》
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{自主实现类 ChatGPT 大模型训练} \hfill 2025.08 -- 至今 \titlebreak
+项目描述：从零构建端到端大语言模型训练系统，完整覆盖类 ChatGPT 的核心技术栈，实现从数据处理到模型训练的全流程自主开发与优化。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{训练}：基于 PyTorch 构建端到端大模型训练流水线，完成 FineWeb 数据清洗、去重与分片处理，覆盖 Tokenizer 构建、预训练（Pre-training）、监督微调（SFT）及基于 PPO 的 RLHF 对齐训练全流程。
+在 8×A100 集群环境下完成 1.05M tokens 规模训练，采用混合精度与系统化超参数调优优化收敛稳定性与算力利用率。
+    \item \textbf{核心产出}：最终在 880M 参数规模下实现 Core Score 相较 GPT-2 提升 2%。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
 % --- 第二个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
+\textbf{开源大模型技术知识(RAG)系统} \hfill 2025.02 -- 至今 \titlebreak
+项目描述：基于 Qwen 系列大模型,面向 GitHub 上 LLM / GPT / Transformer 相关开源项目构建检索增强生成（RAG）问答系统.
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
+    \item \textbf{文档构建}：基于 GitHub API 批量采集 Star >100 的 LLM 相关开源项目 README 文档，构建领域技术语料；设计规则清洗管线完成格式标准化与噪声过滤，并引入大模型进行语义级重构与冗余压缩，最终完成结构化分片以适配向量检索与 RAG 系统。
+    \item \textbf{RAG召回}：文档向量化采用 Qwen Embedding v4，向量数据存储于 Milvus 数据库中。RAG 调用策略采用 规则判断与 LLM 自判断的混合机制，根据问题类型和模型置信度动态决定是否触发检索增强生成。
     \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
 \end{itemize}
 
