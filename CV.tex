@@ -106,7 +106,7 @@
 \textbf{浙江大学} \hfill 2024.9 -- 2027.6\\[0.5em] % 标题和正文间加一点距离
 计算机科学与技术 硕士\quad  
 \begin{itemize}[nosep]
-    \item 相关课程：《cuda编程》、《机器学习》、《数据挖掘》
+    \item 相关课程：《cuda编程》、《深度学习》、《数据挖掘》
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
@@ -127,29 +127,22 @@
 
 % --- 第二个项目 ---
 \textbf{开源大模型技术知识(RAG)系统} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：基于 Qwen 系列大模型,面向 GitHub 上 LLM / GPT / Transformer 相关开源项目构建检索增强生成（RAG）问答系统.
+项目描述：基于 Qwen 系列大模型,面向 GitHub 上大模型相关开源项目构建检索增强生成（RAG）问答系统
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{文档构建}：基于 GitHub API 批量采集 Star >100 的 LLM 相关开源项目 README 文档，构建领域技术语料；设计规则清洗管线完成格式标准化与噪声过滤，并引入大模型进行语义级重构与冗余压缩，最终完成结构化分片以适配向量检索与 RAG 系统。
-    \item \textbf{RAG召回}：文档向量化采用 Qwen Embedding v4，向量数据存储于 Milvus 数据库中。RAG 调用策略采用 规则判断与 LLM 自判断的混合机制，根据问题类型和模型置信度动态决定是否触发检索增强生成。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+    \item \textbf{文档构建}：基于 GitHub API 批量采集 Star >100 的 LLM 相关开源项目及 Star >1000 Python 项目的 README 文档，构建领域技术语料；设计规则清洗管线完成格式标准化与噪声过滤，并引入大模型进行语义级重构与冗余压缩，最终完成结构化分片以适配向量检索与 RAG 系统。
+    \item \textbf{RAG召回}：系统采用 Qwen Embedding v4 对文档进行向量化，并将向量数据存储于 Milvus 数据库中。RAG 调用策略结合 规则判断与 LLM 自判断，根据问题类型和模型置信度动态决定是否触发检索增强生成。多路召回策略同时使用 向量检索与 BM25 检索，并通过 Qwen-Reranker 对召回结果进行重排，以提升最终生成回答的相关性和准确性。
+    \item \textbf{系统评测}：标注了 20 条数据作为评测集，经验证 RAG 正确启用的概率达到 100%。在此基础上，多路检索的 Recall@3 达到 66%，最终生成回答的词级 F1-score 为 78%，表明模型在知识检索与答案生成方面均表现良好。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
-\end{itemize}
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
-\begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
-    
+    \item \textbf{编程语言：} Python, C++,Cuda,pytorch
+    \item \textbf{开发工具：} SSH, Git, TRAE,各家编程模型
+    \item \textbf{掌握技能：} 深入理解主流 VLM/LLM（LLAMA、DeepSeek、Qwen、MoE）的结构与优化策略；具备丰富的 CUDA/GPU 并行计算实战经验，擅长 kernel 优化与算子开发；精通学术文献快速分析，熟悉大模型训练与对齐流程，包括预训练、指令微调及强化学习优化。
 \end{itemize}
     
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
 \begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://maksymilan.github.io/}{https://maksymilan.github.io/}
-    \item \textbf{GitHub：} \href{https://github.com/maksymilan}{https://github.com/maksymilan} 
-    \item \textbf{英语水平：} CET-4, CET-6
+    \item \textbf{英语水平：} CET-4,考研英语一78分
 \end{itemize}
 \end{document}
